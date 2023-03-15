@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #344956;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  box-sizing: border-box;
+  height: 100px;
+  padding: 8px;
+}
+
+.header__logo-img {
+  margin-left: 10px;
+  height: 85px;
+  width: 145px;
+}
+nav {
+  width: 500px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__p {
+  font-size: 1.5rem;
+  width: 400px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  max-width: 100%;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+main {
+  padding: 5px;
+}
+
+.profile {
+  height: 100vh;
+  border: 5px solid #344956;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__profile__div-img {
+  border: 2px solid #344956;
+  width: 25vh;
+  height: 25vh;
+  /* margin: 15px 0px 0px 15px; */
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main__profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main__profile__img__wrapper {
+  border: 2px solid #344956;
+  width: 35%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.info__wrapper {
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #344956;
+  padding: 20px;
+  height: 70vh;
+  width: 70vh;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info__wrapper p {
+  /* border: 2px solid blueviolet; */
+  padding: 3px;
+  display: inline-block;
+}
+
+input {
+  /* border: 2px solid blueviolet; */
+  padding: 5px;
+  font-size: 20px;
+  margin: 15.5px;
+}
+
+.left {
+  /* border: 2px solid blueviolet; */
+  width: 100px;
+  text-align: center;
+  height: fit-content;
+}
+.right {
+  /* border: 2px solid blueviolet; */
+  width: 300px;
+  height: fit-content;
+}
+
+.info-edit {
+  border: 2px solid #344956;
+  text-align: center;
+  height: 50px;
+}
+
+.btn {
+  width: 20%;
+  height: 75%;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 6.5px;
+  background-color: #344956;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background-color: #26343d;
+  /* color: red; */
+}
+
+.hidden {
+  display: none;
+}
+
+.submit-btn {
+  margin-top: 0;
+  width: 30%;
+  margin-left: 28px;
+}
+
+footer {
+  background-color: #403d46;
+  padding: 10px;
+  height: 100px;
+  color: white;
+  font-size: 18px;
+  /* font-weight: bold; */
+}
+
+.foot p {
+  margin: 0;
+}
