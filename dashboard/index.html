@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <img src="logo.png" class="header__logo-img" />
+      </div>
+      <nav>
+        <p class="nav__p"><a href="#">Home</a> | <a href="#">Explore Books</a> | <a href="#">History</a> | <a href="#">Profile</a></p>
+      </nav>
+    </header>
+    <main>
+      <div class="profile">
+        <div class="main__profile__img__wrapper">
+          <div class="main__profile__div-img">
+            <img src="nobita.png" class="main__profile-img" />
+          </div>
+        </div>
+        <div class="info__wrapper">
+          <div class="info">
+            <div class="left">
+              <p>
+                Name :
+                <!-- Put name from backend. -->
+              </p>
+              <p>
+                Email :
+                <!-- Put email from backend. -->
+              </p>
+              <p>Year :</p>
+              <p>Phone :</p>
+              <p>Reg. No. :</p>
+              <p>Gender :</p>
+            </div>
+            <div class="right">
+              <form action="#">
+                <input type="text" value="Not Specified" readonly="readonly" />
+
+                <input type="text" value="Not Specified" readonly="readonly" />
+
+                <input type="text" value="Not Specified" readonly="readonly" />
+
+                <input type="text" value="Not Specified" readonly="readonly" />
+
+                <input type="text" value="Not Specified" readonly="readonly" />
+
+                <input type="text" value="Not Specified" readonly="readonly" />
+                <input type="submit" value="DONE" class="submit-btn btn hidden" onclick="doneInfo()" />
+              </form>
+            </div>
+          </div>
+          <div class="info-edit">
+            <button class="edit-btn btn" onclick="editInfo()">EDIT</button>
+            <!-- <button class="done-btn btn hidden" onclick="doneInfo()">DONE</button> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="foot">
+      <p>&copy Team BreatheNCode, 2023</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
