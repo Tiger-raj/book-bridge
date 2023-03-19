@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render,redirect
 from registerform.models import Userdetail,Userfulldetail
+from django.contrib import messages
 
 def HomePage(request):
     return render(request,'Home.html')
@@ -15,10 +16,26 @@ def saveform(request):
         user_email=request.POST.get('user_email')
         user_password1=request.POST.get('user_password1')
         user_password2=request.POST.get('user_password2')
-        enn=Userdetail(first_name=first_name,username=username,user_email=user_email,user_password=user_password1)
-        enn.save()
-        data={'fname':first_name,'uname':username,'uemail':user_email,'upassword1':user_password1}
-        return render(request,"dashboard.html",data)
+        if user_password1==user_password2:
+            if Userdetail.objects.filter(username=username).exists():
+                print('username taken')
+                messages.info(request,'username taken')
+                return redirect('/login')
+            elif Userdetail.objects.filter(user_email=user_email).exists():
+                print("email taken")
+                messages.info(request,'email taken')                
+                return redirect('/login')
+            else:
+                enn=Userdetail(first_name=first_name,username=username,user_email=user_email,user_password=user_password1)
+                enn.save()
+                print('user created')
+                data={'fname':first_name,'uname':username,'uemail':user_email,'upassword1':user_password1}
+                return render(request,"dashboard.html",data)
+        else:
+            print('password not matched')
+            messages.info(request,'passward is not same')
+            return redirect('/login')
+        return rendirect('/login')
 
 def submit(request):
     if request.method=='POST':
@@ -48,3 +65,6 @@ def nbooks(request):
 
 def fbooks(request):
     return render(request,'fbooks.html')
+
+def logout(request):
+    return redirect('/')

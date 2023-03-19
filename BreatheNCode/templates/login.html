@@ -39,6 +39,11 @@
           <a href="#" class="form__link" id="linkCreateAccount">Don't have an account? Create it now!!</a>
         </p>
       </form>
+      <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+      </div>
 
 
       <form class="form form--hidden" id="createAccount" action="{% url 'register' %}" method="post">
