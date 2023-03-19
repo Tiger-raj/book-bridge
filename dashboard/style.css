@@ -78,8 +78,8 @@ main {
 
 .main__profile__img__wrapper {
   border: 2px solid #344956;
-  width: 35%;
-  height: 35%;
+  width: 45%;
+  height: 42%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -90,7 +90,7 @@ main {
   font-weight: bold;
   border: 2px solid #344956;
   padding: 20px;
-  height: 70vh;
+  height: 80vh;
   width: 70vh;
 }
 
@@ -171,4 +171,34 @@ footer {
 
 .foot p {
   margin: 0;
+}
+
+.upload__book {
+  border: 2px solid #344956;
+  /* height: 100px; */
+  width: 400px;
+  margin-top: 25px;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.upload__book a {
+  color: #344956;
+  font-size: 20px;
+}
+
+.profile__book-uplod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+
+.username {
+  font-weight: bold;
+}
+.username span {
+  color: red;
 }

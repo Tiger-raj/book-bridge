@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/34c44c29a9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,14 +14,21 @@
         <img src="logo.png" class="header__logo-img" />
       </div>
       <nav>
-        <p class="nav__p"><a href="#">Home</a> | <a href="#">Explore Books</a> | <a href="#">History</a> | <a href="#">Profile</a></p>
+        <p class="nav__p"><a href="index.html">Home</a> | <a href="../library page/index.html">Explore Books</a> | <a href="#">History</a> | <a href="#">Log Out</a></p>
       </nav>
     </header>
     <main>
       <div class="profile">
-        <div class="main__profile__img__wrapper">
-          <div class="main__profile__div-img">
-            <img src="nobita.png" class="main__profile-img" />
+        <div class="profile__book-uplod">
+          <div class="main__profile__img__wrapper">
+            <div class="main__profile__div-img">
+              <img src="nobita.png" class="main__profile-img" />
+              <p class="username">Username : <span>Nobody_1</span></p>
+            </div>
+          </div>
+          <div class="upload__book">
+            <i class="fa-solid fa-book-medical"></i>
+            <a href="../book-upload/index.html">Click here to upload a new book.</a>
           </div>
         </div>
         <div class="info__wrapper">
@@ -34,6 +42,7 @@
                 Email :
                 <!-- Put email from backend. -->
               </p>
+              <p>Course :</p>
               <p>Year :</p>
               <p>Phone :</p>
               <p>Reg. No. :</p>
@@ -51,6 +60,7 @@
 
                 <input type="text" value="Not Specified" readonly="readonly" />
 
+                <input type="text" value="Not Specified" readonly="readonly" />
                 <input type="text" value="Not Specified" readonly="readonly" />
                 <input type="submit" value="DONE" class="submit-btn btn hidden" onclick="doneInfo()" />
               </form>
