@@ -1,0 +1,204 @@
+*{
+    text-decoration: none;
+    list-style: none;
+  }
+  body{
+      background-color: #abc3fe;
+  }
+  
+  
+  .nav{
+    height: 70px;
+    width: 100%;
+    background-color: #344956;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+  nav ul {
+    float:right;
+    margin-right: 20px;
+    padding-top: 12px;
+    
+  
+  }
+  nav li{
+    display: inline-block;
+    margin: 0px 39px;
+    line-height: 20px;
+   
+  }
+  nav a{
+    color:#abc3fe ;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 1px solid transparent;
+    padding: 7px 30px;
+    border-radius: 5px;
+  }
+  a.active,a:hover{
+      border: 1px solid #abc3fe;
+      transition: .5s;
+  }
+  h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 68px;
+  }
+  .text{
+      box-sizing: border-box;
+  
+  padding: 4px;
+  font-family: 'Poppins', sans-serif;
+  
+      text-align:left;
+      margin-left: 29px;
+      font-size: 27px;
+      
+      padding: 7px;
+  
+  }
+  
+  .container{
+      display: grid;
+      align-items: center; 
+      grid-template-columns: 5fr 1fr 1fr 0fr;
+      column-gap: 5px;
+      margin-top: 60px;
+     }
+      .container2{
+      display: grid;
+      grid-template-columns: 0fr 1fr 1fr 1fr;
+      column-gap: 1px;
+      background-color: azure;
+      height: 150px;
+      width: 100%;
+      border-radius: 10px;
+     }
+     .point1, .point2 , .point3{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+     }
+     .point1txt, .point2txt, .point3txt{
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      margin-top: 14px;
+      margin-left: 10px;
+      border: 1px solid rgb(251, 232, 232);
+      border-radius: 10px;
+      padding: 4px;
+      color: white;
+      background-color: rgb(121, 125, 125);
+      height: 100px;
+      width: 280px;
+      text-align: center;
+      
+     }
+     .heading2{
+      font-size: 50px;
+      text-align: center;
+      font-family:'Playfair Display', serif;;
+      
+     }
+     .container3{
+      display: grid;
+      grid-template-columns: 4fr 5fr;
+     }
+     .highlights{
+      width: 800px;
+      background-color: aliceblue;
+      border-radius: 10px;
+     }
+     .highlight1, .highlight2 , .highlight3{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+     }
+     h2{
+      font-size: 34px;
+      font-family: 'Bangers', cursive;
+      color: #344956;
+      text-decoration: underline;
+      
+     }
+     .highlight1,.highlight2,.highlight3{
+      font-size: 27px;
+      text-align: center;
+       color: rgb(138 135 185);
+     
+     }
+     
+     .images{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 3fr 3fr ;
+     }
+   
+   
+  
+  .aboutus{
+   width: 99.6%;
+   height: 350px;
+    border: 2px solid black;
+    background-color: #403d46;
+    border-radius: 25px 25px 0px 0px;
+  }
+  .signup{
+    border: 1px solid rgb(133, 244, 229);
+    border-radius: 7px;
+    padding: 6px;
+    background-color: #403d46;
+    color: #abc3fe;
+    float: right;
+    margin-right: 10px;
+    margin-top: 25px;
+    font-size: 17px;
+  }
+  .lastheading{
+    color: white;
+   text-align: center;
+    font-size: 35px;
+  }
+  .aboutuscontainer{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+  }
+  .contact{
+    color: white;
+    margin-top: 54px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: solid;
+    margin-left: 50px;
+  }
+  a.link{
+   display: inline-block;
+    color: #abc3fe;
+    border: none;
+    margin-left: 80px;
+  }
+  a span{
+    color: rgb(194, 253, 253);
+    position: absolute;
+    
+  }
+  h3{
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: left;
+  }
+  .list{
+    font-size: 24px;
+    color: rgb(245, 143, 125);
+    margin-right: 44px;
+    font-family: 'Play', sans-serif;
+  }
+  .lasttext{
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    float: inline-end;
+    background-color: #344956;
+    color: #1e2028;
+    font-family: 'Abril Fatface', cursive;
+  }
+  .connect{
+    margin-left: 50px;
+  }

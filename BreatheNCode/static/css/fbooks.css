@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-image: url(/img/norbert-toth-I1oL89qxefc-unsplash.jpg) ;
+    background-color: #403d46;
+    background-size: cover;
+    background-blend-mode: darken;
+    opacity: 80%;
+    
+}
+.navbar{
+    display: flex;
+    background-color: #403d46;
+    height: 95px;
+}
+.navlist{
+display: flex;
+
+}
+.rightnav{
+    margin-top: 30px;
+margin-right: 20px;
+width: 100%;
+text-align: right;
+}
+
+.navlist li{
+list-style: none;
+padding: 45px ;
+line-height: 15px;
+width: 57px;
+justify-content: center;
+
+
+}
+.navlist li a{
+font-size: 20px;
+text-decoration: none;
+color: white;
+}
+li a:hover{
+    color: aqua;
+}
+.btn{
+    font-size: 17px;
+    border: 2px solid silver;
+    border-radius: 3px;
+    padding: 2px;
+}
+#search{
+    font-size: 17px;
+    border: 2px solid silver;
+    border-radius: 3px;
+}
+.heading{
+    font-size: 45px;
+    text-align: center;
+}
+.bookarea1,.bookarea2{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    height:180px ;
+    height: 200px;
+    margin-top: 15px;
+}
+.book1,.book2,.book3,.book4,.book5,.book6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book1img,.book2img,.book3img,.book4img,.book5img,.book6img{
+    margin-right: 33px;
+    width: 80px;
+}
+.book1txt,.book2txt,.book3txt,.book4txt,.book5txt,.book6txt{
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+footer{
+    text-align: center;
+    background-color: #403d46;
+    height: 40px;
+    color: whitesmoke;
+    font-size: 20px;
+    font-family:  'Bangers', cursive;;
+}

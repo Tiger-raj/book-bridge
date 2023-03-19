@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://kit.fontawesome.com/34c44c29a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <img src="/static/images/logo.png" class="header__logo-img" />
+      </div>
+      <nav>
+        <p class="nav__p"><a href="#">Home</a> 
+          | <a href="/books">Explore Books</a> 
+          | <a href="#">History</a> 
+          | <a href="#">Log Out</a></p>
+      </nav>
+    </header>
+    <main>
+      <div class="profile">
+        <div class="profile__book-uplod">
+          <div class="main__profile__img__wrapper">
+            <div class="main__profile__div-img">
+              <img src="/static/images/nobita.png" class="main__profile-img" />
+              <p class="username">Username : <span>{{uname}}</span></p>
+            </div>
+          </div>
+          <div class="upload__book">
+            <i class="fa-solid fa-book-medical"></i>
+            <a href="#">Click here to upload a new book.</a>
+          </div>
+        </div>
+        <div class="info__wrapper">
+          <div class="info">
+            <div class="left">
+              <p>
+                Name :
+                <!-- Put name from backend. -->
+              </p>
+              <p> Username :</p>
+            
+              <p>
+                Email :
+                <!-- Put email from backend. -->
+              </p>
+              <p>Course :</p>
+              <p>Year :</p>
+              <p>Phone :</p>
+              <p>Reg. No. :</p>
+              <p>Gender :</p>
+            </div>
+            <div class="right">
+              <form method='post' action="{% url 'submit' %} " >
+                {% csrf_token %}
+
+                <input type="text" value="{{fname}}" name='first_name' />
+
+                <input type="text" value="{{uname}}" name='username' />
+
+                <input type="text" value="{{uemail}}" name='user_email' />
+
+                <input type="text" value="{{ucourse}}" name='user_course' />
+
+                <input type="text" value="{{uyear}}" name='user_year' />
+
+                <input type="text" value="{{uphone}}" name='user_phone' />
+
+                <input type="text" value="{{urno}}" name='user_reg_no' />
+                <input type="text" value="{{ugender}}" name='user_gender' />
+                <input type="submit" value="DONE" class="submit-btn btn hidden" onclick="doneInfo()" />
+              </form>
+            </div>
+          </div>
+          <div class="info-edit">
+            <button class="edit-btn btn" onclick="editInfo()">EDIT</button>
+            <!-- <button class="done-btn btn hidden" onclick="doneInfo()">DONE</button> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="foot">
+      <p>&copy Team BreatheNCode, 2023</p>
+    </footer>
+    <script src="/static/js/dashboard.js"></script>
+  </body>
+</html>
