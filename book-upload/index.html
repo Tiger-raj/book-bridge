@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Upload Book</title>
+    <script src="https://kit.fontawesome.com/0755481f27.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="left-container">
+        <h1>UPLOAD BOOK</h1>
+        <div class="puppy">
+          <img src="https://cdn.pixabay.com/photo/2015/10/22/17/28/stack-of-books-1001655_960_720.jpg" />
+        </div>
+      </div>
+      <div class="right-container">
+        <form action="#">
+          <header>
+            <h1>Yay, new book! Fill all details correctly to get your book listed!</h1>
+            <div class="set">
+              <div class="books-name">
+                <label for="books-name">Name</label>
+                <input id="books-name" placeholder="Book's Name" type="text" />
+              </div>
+              <div class="books-photo">
+                <label for="books-upload">Upload a photo</label>
+                <input type="file" name="" id="books-upload" />
+              </div>
+            </div>
+            <div class="set">
+              <div class="books-author">
+                <label for="books-author">Author</label>
+                <input id="books-author" placeholder="Book's Author" type="text" />
+              </div>
+              <div class="books-date-of-purchase">
+                <label for="books-date-of-purchase">Date-of-purchase</label>
+                <input id="books-date-of-purchase" placeholder="MM/DD/YYYY" type="date" />
+              </div>
+            </div>
+            <div class="set">
+              <div class="books-category">
+                <label for="book-category-free">Category</label>
+                <div class="radio-container">
+                  <input checked="" id="book-category-free" name="book-category" type="radio" value="free" />
+                  <label for="book-category-free">Free</label>
+                  <input id="book-category-paid" name="book-category" type="radio" value="paid" />
+                  <label for="book-category-paid">Paid</label>
+                </div>
+              </div>
+              <div class="books-academic-non-acad">
+                <label for="book-academic">Academic or Non-Acad</label>
+                <div class="radio-container">
+                  <input checked="" id="book-academic" name="academic-non-acad" type="radio" value="academic" />
+                  <label for="book-academic">Academic</label>
+                  <input id="book-non-acad" name="academic-non-acad" type="radio" value="non-acad" />
+                  <label for="book-non-acad">Non-Acad</label>
+                </div>
+              </div>
+            </div>
+            <div class="books-weight">
+              <label for="book-weight-0-250">Weight</label>
+              <div class="radio-container">
+                <input checked="" id="book-weight-0-250" name="book-weight" type="radio" value="0-250" />
+                <label for="book-weight-0-250">0-250 gm</label>
+                <input id="book-weight-250-500" name="book-weight" type="radio" value="250-500" />
+                <label for="book-weight-250-500">250-500 gm</label>
+                <input id="book-weight-500-1000" name="book-weight" type="radio" value="500-1000" />
+                <label for="book-weight-500-1000">500-1000 gm</label>
+                <input id="book-weight-100-plus" name="book-weight" type="radio" value="1000+" />
+                <label for="book-weight-100-plus">1000+ gm</label>
+              </div>
+            </div>
+          </header>
+          <footer>
+            <div class="set">
+              <button id="back">Back</button>
+              <input type="submit" value="Next" id="next" />
+            </div>
+          </footer>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
